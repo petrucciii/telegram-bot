@@ -1,4 +1,8 @@
-#by ricky
+#by petrucciii
+#
+#01/28/2021
+#
+#petrucciii's telegram bot @petrucciiiBot
 import telebot
 
 API_TOKEN = ''
