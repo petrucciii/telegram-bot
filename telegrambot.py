@@ -3,6 +3,7 @@
 #01/28/2021
 #
 #petrucciii's telegram bot @petrucciiiBot
+
 import telebot
 
 API_TOKEN = ''
@@ -10,14 +11,14 @@ API_TOKEN = ''
 bot = telebot.TeleBot(API_TOKEN)
 
 
-
+#commands
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
     bot.reply_to(message, """\
-i am a chat bot created by @petruciii\
+i am a chat bot created by @petrucciii\
 """)
 
-
+#messages
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
     if message.text == 'hi' :
@@ -68,7 +69,6 @@ def echo_message(message):
         bot.reply_to(message, 'i like so much the pizza!')
     else :
         bot.reply_to(message, 'i am sorry, i did not understand! i am still learning!')
-
 
 
 bot.polling()
