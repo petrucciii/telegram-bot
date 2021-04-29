@@ -37,10 +37,8 @@ def echo_message(message):
         bot.reply_to(message, '@petrucciii')
     elif message.text == 'who is petrucciii?':
         bot.reply_to(message, 'he is the programmer who made me')
-    elif message.text == 'hello':
+    elif message.text == 'hello' or message.text == 'hey':
         bot.reply_to(message, 'hey, how are you?')
-    elif message.text == 'hey':
-        bot.reply_to(message, 'hey, how are you')
     elif message.text == 'i am fine, thanks':
         bot.reply_to(message, 'i am fine, too')
     elif message.text == 'i am fine':
