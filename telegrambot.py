@@ -29,8 +29,6 @@ def echo_message(message):
         bot.reply_to(message, 'oh, i am so sorry')
     elif message.text == 'i am feeling bad, and you?':
         bot.reply_to(message, 'oh, i am so sorry. i am fine, thanks')
-    elif message.text == 'fuck you':
-        bot.reply_to(message, 'shut up! son of a bitch!')
     elif message.text == 'i love you':
         bot.reply_to(message, 'let us remain friends')
     elif message.text == 'my name is dado':
@@ -49,11 +47,7 @@ def echo_message(message):
         bot.reply_to(message, 'i am fine, too')
     elif message.text == 'i am fine, and you?':
         bot.reply_to(message, 'i am fine, too')
-    elif message.text == 'are you stupid?':
-        bot.reply_to(message, 'shut up! son of a bitch!')
-    elif message.text == 'you are stupid':
-        bot.reply_to(message, 'shut up! son of a bitch!')
-    elif message.text == 'bitch':
+    elif message.text == 'are you stupid?' or message.text == 'you are stupid' or message.text == 'bitch' or message.text == 'fuck you':
         bot.reply_to(message, 'shut up! son of a bitch!')
     elif message.text == 'how old are you?':
         bot.reply_to(message, 'i have 1 day')
